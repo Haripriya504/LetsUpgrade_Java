@@ -1,0 +1,26 @@
+
+class Emp{
+	public static void main(String[] args) {
+		int sub1,sub2,sub3,sub4,sub5;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Sub1 Marks:");
+		sub1=sc.nextInt();
+		System.out.println("Enter the Sub2 Marks:");
+		sub2=sc.nextInt();
+		System.out.println("Enter the Sub3 Marks:");
+		sub3=sc.nextInt();
+		System.out.println("Enter the Sub4 Marks:");
+		sub4=sc.nextInt();
+		System.out.println("Enter the Sub5 Marks:");
+		sub5=sc.nextInt();
+        if(sub1>100 || sub2>100 || sub3>100  || sub4>100 || sub5>100 ) {
+        	System.out.println("Invalid OutPut"); 
+        	System.exit(0);
+		}		
+		int total=sub1+sub2+sub3+sub4+sub5;
+		int percentage=(total/500)*100;
+		System.out.println("The total Marks is:"+total);
+		System.out.println("The percentage is:"+percentage+"%");		
+	}
+}
+
