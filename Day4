@@ -1,1 +1,57 @@
 
+package com.assignment;
+import java.util.Scanner;
+
+public class Avenger {
+	Scanner sc=new Scanner(System.in);
+	public String name;
+	public int age;
+	public int power;
+	public int weapon;
+	public String planet;
+    
+    public void getDetails() {
+    	name=sc.nextLine(); 
+    	age=sc.nextInt();
+    	power=sc.nextInt();
+    	weapon=sc.nextInt();
+    	planet=sc.next();
+    }
+    public void displayDetails() {
+    	System.out.println("name:" +name+"\n"+"age:"+age+"\n"+"power:"+power+"\n"+"weapon:"+weapon+"\n"+"planet:"+planet);    	
+    }
+    public static void main(String[] args) {
+    	Avenger[] a=new Avenger[5];
+    	for(int i=0;i<1;i++) {
+    		a[i]=new Avenger();
+    		a[i].getDetails();    		
+    	}
+    	for(int i=0;i<1;i++)
+    		a[i].displayDetails();
+    }
+}
+-----------------------------------------------------------------------------------------
+
+package com.assignment;
+
+public class OddValues {
+
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,4,5};
+		for(int i=0;i<arr.length;i++)
+			if(arr[i]%2==1)
+				System.out.println(arr[i]);
+	}
+}
+---------------------------------------------------------------------------------------------------
+package com.assignment;
+
+public class SumOfArrElements {
+	public static void main(String[] args) {
+	int arr[]= {1,2,3,4,5};
+	int i,sum=0;
+	for(sum=i=0;i<arr.length;i++)
+		sum+=arr[i];
+	System.out.println("Sum of Numbers is:"+sum);
+	}
+}
